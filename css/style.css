@@ -1,5 +1,48 @@
 /* Variables */
 
 :root{
-    
+    --basic-black: #000000;
+    --basic-blue: #293449;
+    --basic-dark-blue: #161D29;
+    --basic-extra-dark-blue: #1D2739;
+
+    --basic-material: #FFBF47;
+    --basic-tool: #3BBCE3;
+    --basic-technics: #DC91D8;
+    --basic-discount: #8ED78F;
+    --basic-delivery: #FFBF47;
+
+    --basic-red: #EE3643;
+    --basic-dark-red: #CA2C37;
+    --basic-extra-dark-red: #BA2732;
+    --basic-green: #63A63E;
+    --basic-light-green: #5FBB2D;
+    --basic-dark-green: #518534
+    --basik-bookmark-hover: #32425C;
+    --basik-bookmark-click: #99A1AE;
+
+    --bacis-white:#ffffff;
+    --basic-blue:#F1F5F7;
+    --basic-ligth-yellow:#F7F3EC;
+
+    --basic-yellow:FFD180;
+}
+
+/* 
+font-family: 'Cuprum', sans-serif;
+font-family: 'PT Sans', sans-serif;
+
+*/
+
+/* Glabal */
+
+body{
+  min-width: 940px;
+  padding: 0;
+  margin: 0;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+
 }
