@@ -10,8 +10,8 @@
   <link rel="manifest" href="manifest.webmanifest">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -21,16 +21,18 @@
 <body class="page-body">
   <header class ="main-header">
     <section class= "main-header-top">
-      <a href="" class="main-header-logo">
-        <img src="img/logo.svg" alt="логотип техномарт" width ="220px" height = "47px">
-      </a>
-
-      <input class = "main-header-search" type="search" value="Поиск">
-      
-      <a class = "main-header-bookmark" href="blank.html">Закладки: 0</a>
-      <a class = "main-header-cart" href="blank.html">Корзина: 0</a>
-
-      <a class = "main-header-order" href ="blank.htmml">Оформить заказ</a>
+      <div class="main-header-top-wrapper">
+        <a href="" class="main-header-logo">
+          <img src="img/logo.svg" alt="логотип техномарт" width ="220px" height = "47px">
+        </a>
+  
+        <input class = "main-header-search" type="search" value="Поиск">
+        
+        <a class = "main-header-bookmark" href="blank.html">Закладки: 0</a>
+        <a class = "main-header-cart" href="blank.html">Корзина: 0</a>
+  
+        <a class = "main-header-order" href ="blank.htmml">Оформить заказ</a>
+      </div>
     </section>
 
     <section class= "main-header-middle">
@@ -61,21 +63,24 @@
     </section>
 
     <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a>Главная</a></li>
-        <li><a href="blank.html">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="blank.html">Новости</a></li>
-        <li><a href="blank.html">Спецпредложения</a></li>
-        <li><a href="blank.html">Доставка</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="containet">
+          <ul class="site-navigation">
+            <li><a>Главная</a></li>
+            <li><a href="blank.html">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="blank.html">Новости</a></li>
+            <li><a href="blank.html">Спецпредложения</a></li>
+            <li><a href="blank.html">Доставка</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
   </header>
 
   <main class="container">
-
     <section class="category">
       <ul class="category-list">
         <li class="category-item category-materials">
@@ -118,43 +123,60 @@
     </section>
 
     <section class="products">
-      <h2 class="products-header">Популярные товары:</h2>
-      <a class="button products-link" href="blank.html">все популярные товары</a>
+      <div class="popular-header-wrapper">
+        <h2 class="popular-header">Популярные товары:</h2>
+        <a class="button popular-link" href="blank.html">все популярные товары</a>
+      </div>
 
       <ul class="products-list">
         <li class="products-item">
           <img class="products-item-img" src="img/items/BOSCH-BFG9000.png">
-          <p class="products-item-desc">Перфоратор BOSCH</br>BFG 9000</p>
-          <p class="products-item-price-sale">32500 Р.</p>
-          <button class="button button-price" type="submit">25500 Р.</button>
+          <h3 class="products-item-desc">Перфоратор BOSCH</br>BFG 9000</h3>
+
+          <span class="products-item-price-wrapper">
+            <p class="products-item-price-sale"><del>32500 Р.</del></p>
+          <p class="products-item-price" >22500 Р.</p>
+          </span>
         </li>
 
         <li class="products-item">
           <img class="products-item-img" src="img/items/BOSCH-BFG3000.png">
-          <p class="products-item-desc">>Перфоратор BOSCH</br>BFG 3000</p>
-          <p class="products-item-price-sale">22500 Р.</p>
-          <button class="button button-price" type="submit">15500 Р.</button>
+          <h3 class="products-item-desc">Перфоратор BOSCH</br>BFG 3000</h3>
+
+          <span class="products-item-price-wrapper">
+            <p class="products-item-price-sale"><del>22500 Р.</del></p>
+          <p class="products-item-price" >15500 Р.</p>
+          </span>
         </li>
 
         <li class="products-item">
           <img class="products-item-img" src="img/items/BOSCH-BFG6000.png">
-          <p class="products-item-desc">>Перфоратор BOSCH</br>BFG 6000</p>
-          <p class="products-item-price-sale">30500 Р.</p>
-          <button class="button button-price" type="submit">22500 Р.</button>
+          <h3 class="products-item-desc">Перфоратор BOSCH</br>BFG 6000</h3>
+
+          <span class="products-item-price-wrapper">
+            <p class="products-item-price-sale"><del>30500 Р.</del></p>
+            <p class="products-item-price" >22500 Р.</p>
+          </span>
         </li>
 
         <li class="products-item">
           <img class="products-item-img" src="img/items/BOSCH-BFG2000.png">
-          <p class="products-item-desc">>Перфоратор BOSCH</br>BFG 2000</p>
-          <p class="products-item-price-sale">22500 Р.</p>
-          <button class="button button-price" type="submit">12500 Р.</button>
+          <h3 class="products-item-desc">Перфоратор BOSCH</br>BFG 2000</h3>
+            
+          <span class="products-item-price-wrapper">
+            <p class="products-item-price-sale"><del>22500 Р.</del></p>
+          <p class="products-item-price" >12500 Р.</p>
+          </span>
         </li>
       </ul>
     </section>
 
     <section class="manufacturers">
-      <h2 class="manufacturers-header" >популярные производители</h2>
-      <a class="manufacturers-link" href="blank.html">все производители</a>
+      
+      <div class="popular-header-wrapper">
+        <h2 class="popular-header" >популярные производители</h2>
+        <a class="button popular-link" href="blank.html">все производители</a>
+      </div>
 
       <ul class="manufacturers-list">
         <li class="manufacturers-item">

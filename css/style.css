@@ -17,15 +17,22 @@
     --basic-extra-dark-red: #BA2732;
     --basic-green: #63A63E;
     --basic-light-green: #5FBB2D;
-    --basic-dark-green: #518534
-    --basik-bookmark-hover: #32425C;
-    --basik-bookmark-click: #99A1AE;
+    --basic-dark-green: #518534;
+
+    --basic-adress-link:#32425C;
+
+    --basic-bookmark-hover: #32425C;
+    --basic-bookmark-click: #99A1AE;
 
     --bacis-white:#ffffff;
-    --basic-blue:#F1F5F7;
+    --basic-light-blue:#F1F5F7;
     --basic-ligth-yellow:#F7F3EC;
 
-    --basic-yellow:FFD180;
+    --basic-yellow:#FFD180;
+    --basic-light-yellow:#F9F5F0;
+    --basic-del-text:#a9a9a9;
+
+    --basic-item-border:#EAEAEA;
 }
 
 /* 
@@ -44,5 +51,186 @@ body{
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+}
 
+a{
+  text-decoration: none;
+  color: var(--basic-black);
+}
+img{
+  max-width:100%;
+}
+ul{
+  list-style: none;
+}
+
+.button{
+  border: none;
+  background-color: var(--basic-red);
+  color: var(--bacis-white);
+}
+
+/* header */
+
+.main-header{
+  font-family: "Cuprum";
+  background-color: var(--basic-light-blue-blue);
+  /* max-height: 320px; */
+}
+.main-header-top{
+  background-color:var(--basic-blue);
+  color:var(--bacis-white);
+}
+.main-header-top a{
+  color:var(--bacis-white);
+}
+
+.main-header-middle{
+
+}
+.header-middle-desc{
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color:var(--basic-red);
+}
+.header-middle-adress-tel a{
+  font-family: Cuprum;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+.header-middle-adress-adress{
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-adress-link);
+}
+
+.header-middle-login{
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.main-navigation{
+  font-size: 18px;
+  line-height: 24px;
+  color:var(--bacis-white);
+}
+.main-navigation-wrapper{
+  background-color: var(--basic-blue);
+  
+}
+
+.site-navigation a {
+  color:var(--bacis-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+  background-color:var(--basic-extra-dark-blue);
+}
+.site-navigation a:active{
+  color:var(--basic-bookmark-click);
+}
+/*************************** category ********************************/
+
+.category{
+  font-family: Cuprum;
+  color: var(--bacis-white);
+}
+
+.category-header{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.category-link{
+  font-size: 14px;
+  color: inherit;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.category-item{
+  width: 300px;
+  height: 123px;
+}
+.category-materials{
+  background: var(--basic-material) url("../img/new-item.svg") no-repeat 100% 0%;
+}
+.category-tool{
+  background-color: var(--basic-tool);
+}
+.category-technics{
+  background-color: var(--basic-technics);
+}
+.category-discount{
+  background-color:var(--basic-discount);
+}
+.category-delivery{
+  background-color: var(--basic-delivery);
+}
+.category-link{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.category-link:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.category-slider{
+  width: 620px;
+  height: 266px;
+  background-color: #515151;  
+  background-image: url("../img/slider-perf.jpg");
+  color: var(--bacis-white);
+}
+.category-slider a{
+  color: inherit;
+}
+
+/****************************** POPULAR **********************/
+
+.products{
+}
+
+.popular-header-wrapper{
+  height: 89px;
+  background-color: var(--basic-light-yellow);
+  font-family: Cuprum;
+  text-transform: uppercase;
+}
+.popular-header{
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-adress-link);
+}
+
+.popular-link{
+  font-size: 14px;
+}
+
+.products-list{
+
+}
+.products-item{
+  width: 220px;
+  height: 318px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+
+  text-align: center;
+  border: 1px solid var(--basic-item-border);
+}
+.products-item-price{
+
+  /* color:var(--bacis-white); */
+  /* background: url("../img/red-button.svg") no-repeat 0% 0%; */
+}
+
+.products-item-price-sale{
+  color: var(--basic-del-text);
+}
+.products-item-price{
 }
