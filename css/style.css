@@ -22,6 +22,7 @@
     --basic-adress-link:#32425C;
 
     --basic-bookmark-hover: #32425C;
+    --basic-bookmark-hover-dark:#293449;
     --basic-bookmark-click: #99A1AE;
 
     --bacis-white:#ffffff;
@@ -33,6 +34,7 @@
     --basic-del-text:#a9a9a9;
 
     --basic-item-border:#EAEAEA;
+    --basic-new-bg:url("../img/new-item.svg") no-repeat 100% 0%;
 }
 
 /* 
@@ -70,6 +72,9 @@ ul{
   color: var(--bacis-white);
 }
 
+
+
+
 /* header */
 
 .main-header{
@@ -77,12 +82,18 @@ ul{
   background-color: var(--basic-light-blue-blue);
   /* max-height: 320px; */
 }
+
 .main-header-top{
+  /* height: 42px; */
   background-color:var(--basic-blue);
   color:var(--bacis-white);
 }
 .main-header-top a{
   color:var(--bacis-white);
+}
+.main-header-order{
+  padding: 9px 16px 9px 19px;
+  background-color: var(--basic-green);
 }
 
 .main-header-middle{
@@ -146,10 +157,16 @@ ul{
   line-height: 30px;
 }
 .category-link{
+  display: block;
+  width: 135px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
   font-size: 14px;
   color: inherit;
   text-transform: uppercase;
-  line-height: 18px;
+  line-height: 18px;  
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .category-item{
@@ -157,7 +174,7 @@ ul{
   height: 123px;
 }
 .category-materials{
-  background: var(--basic-material) url("../img/new-item.svg") no-repeat 100% 0%;
+  background: var(--basic-material) ;
 }
 .category-tool{
   background-color: var(--basic-tool);
@@ -171,9 +188,6 @@ ul{
 .category-delivery{
   background-color: var(--basic-delivery);
 }
-.category-link{
-  background-color: rgba(255, 255, 255, 0.3);
-}
 .category-link:hover{
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -186,6 +200,12 @@ ul{
 }
 .category-slider a{
   color: inherit;
+}
+.category-slider-link{
+  font-size: 14px;
+  background: var(--basic-dark-red);
+  width: 192px;
+  height: 38px;
 }
 
 /****************************** POPULAR **********************/
@@ -233,4 +253,119 @@ ul{
   color: var(--basic-del-text);
 }
 .products-item-price{
+}
+
+/*****************SERVICE******************************/
+
+.service-header{
+  color: var(--basic-black);
+  font-size: 30px;
+  font-family: Cuprum;
+  text-transform: uppercase;
+}
+
+.button-service{
+  font-family: Cuprum;
+  font-weight: 700;
+  font-size: 21px;
+  padding-left: 22px;
+  text-align: left;
+  width: 240px;
+  height: 61px;
+  background-color: var(--basic-bookmark-hover);  
+  color:var(--bacis-white);
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid var(--basic-bookmark-hover-dark);
+}
+
+.button-service:hover{
+  color: var(--basic-bookmark-hover);  
+  background-color: var(--bacis-white);
+  border-bottom: 1px solid var(--bacis-white);
+}
+
+.service-desc-header{
+  font-family: Cuprum;
+  font-size: 30px;
+  color: var(--basic-blue)
+}
+
+/************************* ABOUT ***************************/
+
+.about-company-header{
+  font-family: Cuprum;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.about-company-item{
+  font-family: 'Cuprum';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about-company-link{
+  display: block;
+  width: 220px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  padding: 11px 0 8px 0;
+  color: var(--bacis-white);
+  background-color: var(--basic-dark-red);
+}
+.about-contact-header{
+  font-family: 'Cuprum';
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-contact-link{
+  display: block;
+  width: 300px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 11px 0 8px 0;
+  color: var(--bacis-white);
+  background-color: var(--basic-dark-red);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .new::after{
+  content: "eweq";
+  background: url("../img/new-item.svg") no-repeat 100% 0%;
+} */
+
+
+
+/************************FOOTER**************************/
+
+.footer{
+  background-color: var(--basic-blue);
+  color: var(--bacis-white);
+}
+
+.footer-category-item a{
+  color:var(--basic-yellow);
+}
+
+.feedback-item a{
+  color:var(--basic-yellow);
 }

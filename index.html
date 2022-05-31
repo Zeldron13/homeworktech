@@ -19,6 +19,7 @@
 </head>
 
 <body class="page-body">
+
   <header class ="main-header">
     <section class= "main-header-top">
       <div class="main-header-top-wrapper">
@@ -83,7 +84,7 @@
   <main class="container">
     <section class="category">
       <ul class="category-list">
-        <li class="category-item category-materials">
+        <li class="category-item category-materials new">
           <h2 class="category-header">Материалы</h2>
           <a class="category-link" href="blank.html">на любой вкус</a>
         </li>
@@ -214,6 +215,7 @@
       <div class="service-decoration"></div>
 
       <ul class="service-desc-list">
+        
         <li class="service-desc-item">
           <h3 class="service-desc-header">Доставка</h3>
           <p class="service-desc-desc">
@@ -225,8 +227,8 @@
           <img class="service-desc-img" src="img/service-delivery.png">
         </li>
 
-        <li>
-          <h3 class="service-desc-header">Гарантия</h3>
+        <li class="service-desc-item" hidden>
+          <h3 class="service-desc-header" >Гарантия</h3>
           <p class="service-desc-desc">
             Если купленный у нас товар поломается или заискрит,<br>
             а также в случае пожара, спровоцированного его<br>
@@ -237,13 +239,13 @@
           <img class="service-desc-img" src="img/service-garantee.png">
         </li>
 
-        <li>
+        <li class="service-desc-item" hidden>
           <h3 class="service-desc-header">Кредит</h3>
           <p class="service-desc-desc">
             Залезть в долговую яму стало проще!<br>
             Кредитные консультанты придут вам на помощь.
           </p>
-          <a class="button" href="blank.html">ОТПРАВИТЬ ЗАЯВКУ</aclas>
+          <a class="button" href="blank.html">ОТПРАВИТЬ ЗАЯВКУ</a>
 
           <img class="service-desc-img" src="img/service-credit.png">
         </li>
@@ -251,7 +253,9 @@
     </section>
 
     <section class="about">
+
       <div class="about-company">
+        
         <h2 class="about-company-header">КОМПАНИЯ «Техномарт»</h2>
         <p class="about-company-desc">
           Настоящий мужской шоппинг начинается здесь!
@@ -332,12 +336,12 @@
         </ul>
       </section>
 
-      <ul class="Feedback-list">
-        <li class="Feedback-item">
+      <ul class="feedback-list">
+        <li class="feedback-item">
           <p>Обратная связь:</p>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
-        <li class="Feedback-item">
+        <li class="feedback-item">
           <p>Разработано —</p>
           <a href="https://htmlacademy.ru">htmlacademy.ru</a>
         </li>
@@ -345,7 +349,7 @@
     </section>
   </footer>
 
-  <section class="modal">
+  <section class="modal" hidden>
     <form class="feedback-form" action="blank.html">
       <label class="modal-label" for="feedback__name">Ваше имя:</label>
       <input class="modal-input" id="feedback__name" type="text" placeholder="Имя Фамилия">
@@ -363,7 +367,7 @@
     </form>
   </section>
 
-  <section class="modal">
+  <section class="modal" hidden>
     <!--Здесь будет карта-->
     <button type="button button-close">Закрыть</button>
   </section>
