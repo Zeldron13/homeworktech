@@ -18,9 +18,8 @@
 
 </head>
 
-<body>
+<body class="page-body">
   <header>
-
     <header class ="main-header">
       <section class= "main-header-top">
         <div class="main-header-top-wrapper">
@@ -38,38 +37,43 @@
       </section>
 
       <section class= "main-header-middle">
-        <p class="header-middle-desc">
-          Интернет-магазин<br>
-          строительных материалов<br>
-          и инструментов для ремонта
-        </p>
-  
-        <p class="header-middle-adress-tel">
-          <a href="tel:+78005558628">+7 800 555-86-28</a><br>
-        </p>
-        <p class="header-middle-adress-adress">
-          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
-        </p>
+        <div class="main-header-middle-wrapper">
+          <div class="header-middle-desc">
+            <p>
+              Интернет-магазин<br>
+              строительных материалов<br>
+              и инструментов для ремонта
+            </p>
+          </div>          
+          <div class="header-middle-adress-tel">
+            <p class="header-middle-adress-tel">
+              <a href="tel:+78005558628">+7 800 555-86-28</a><br>
+            </p>
+            <p class="header-middle-adress-adress">
+              г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+            </p>
+          </div>         
+          
+          <div class="header-middle-login">
+            <ul>
+              <li>
+                <a href="blank.html">
+                  <img src="" alt="user">
+                  Равшан Джамшутович
+                </a>
+              </li>
+              <li>
+                <img src="" alt="exit">
+              </li>
+            </ul>
+            <ul>
+              <li>Мои заказы</li>
+              <li><img src="" alt="dot"></li>
+              <li>Личный кабинет</li>
+            </ul>
+          </div>
+        </div>        
       </section>
-
-    <section>
-      <ul>
-        <li>
-          <a href="blank.html">
-            <img src="" alt="user">
-            Равшан Джамшутович
-          </a>
-        </li>
-        <li>
-          <img src="" alt="exit">
-        </li>
-      </ul>
-      <ul>
-        <li>Мои заказы</li>
-        <li><img src="" alt="dot"></li>
-        <li>Личный кабинет</li>
-      </ul>
-    </section>
 
     <nav class="main-navigation">
       <div class="main-navigation-wrapper">
@@ -88,8 +92,9 @@
     </nav>
   </header>
 
-  <main>
-    <ul>
+  <main class="container">
+
+    <ul class="breadcrumbs" >
       <li><img src="" alt="home"></li>
       <li>
         <img src="" alt="next">
@@ -99,7 +104,7 @@
         <img src="" alt="next">
         Инструмент
       </li>
-      <li>
+      <li class="breadcrumbs-current">
         <img src="" alt="next">
         Перфораторы
       </li>
@@ -417,56 +422,63 @@
     </article>
   </main>
 
-  <footer>
-    <section>
-      <a href="index.html">
-        <img src="img/logo.svg" alt="логотип техномарт">
+  <footer class="footer">
+    <section class="footer-top">
+     <div class="footer-wrapper">
+      <a href="">
+        <img src="img/logo.svg" alt="логотип техномарт" width="220px" height="68px">
       </a>
-      <ul>
-        <li><a href="blank.html">Компания</a></li>
-        <li><a href="blank.html">Новости</a></li>
-        <li><a href="blank.html">Каталог</a></li>
-        <li><a href="blank.html">Доставка</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-      <p>
-        г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
-        +7 800 555-86-28
-      </p>
-      <ul>
-        <li><a href="blank.html">Материалы</a></li>
-        <li><a href="blank.html">Техника</a></li>
-        <li><a href="blank.html">Инструмент</a></li>
-        <li><a href="blank.html">Спецпредложения</a></li>
-      </ul>
+      <nav class="footer-navigation">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </nav>
+     </div>
     </section>
-
-    <section>
-      <p>
-        © 2010–2021 Компания «Техномарт»<br>
-        Все права защищены
-      </p>
+    <section class="footer-middle">
+      <div class="footer-wrapper">
+        <p class="footer-adress">
+          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+          +7 800 555-86-28
+        </p>
+        <ul class="footer-category-list">
+          <li class="footer-category-item"><a href="blank.html">Материалы</a></li>
+          <li class="footer-category-item"><a href="blank.html">Техника</a></li>
+          <li class="footer-category-item"><a href="blank.html">Инструмент</a></li>
+          <li class="footer-category-item"><a href="blank.html">Спецпредложения</a></li>
+        </ul>
+      </div>
     </section>
-
-    <section>
-      <ul>
-        <li><img src="#" alt=""></li>
-        <li><img src="#" alt=""></li>
-        <li><img src="#" alt=""></li>
-      </ul>
-    </section>
-
-    <section>
-      <ul>
-        <li>
-          Обратная связь:<br>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-        <li>
-          Разработано —
-          <a href="https://htmlacademy.ru">htmlacademy.ru</a>
-        </li>
-      </ul>
+    <section class="footer-bottom">
+      <div class="footer-wrapper">
+        <p class="copy">
+          © 2010–2021 Компания «Техномарт»<br>
+          Все права защищены
+        </p>
+  
+        <section class="footer-social">
+          <ul class="social-list">
+            <li class="social-item social-vk"></li>
+            <li class="social-item social-fb"></li>
+            <li class="social-item social-inst"></li>
+          </ul>
+        </section>
+  
+        <ul class="feedback-list">
+          <li class="feedback-item">
+            <p>Обратная связь:</p>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="feedback-item">
+            <p>Разработано —</p>
+            <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+          </li>
+        </ul>
+      </div>
     </section>
   </footer>
 
