@@ -280,7 +280,7 @@ ul{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
-.products-item{
+.card-item{
   width: 220px;
   height: 318px;
 
@@ -291,12 +291,12 @@ ul{
   text-align: center;
   border: 1px solid var(--basic-item-border);
 }
-.products-item p{
+.card-item p{
   margin: 0;;
 }
 
 
-.products-item-desc{
+.card-item-desc{
   /* margin: 0px; */
 }
 
@@ -307,7 +307,7 @@ ul{
 
 }
 
-.products-item-img img{
+.card-item-img img{
   position: absolute;
   margin: auto;
   /* min-height: 164px;
@@ -317,7 +317,7 @@ ul{
 
 
 
-.products-item-price{
+.card-item-price{
   width: 141px;
   height: 38px;
   margin: 0 auto;
@@ -327,10 +327,8 @@ ul{
 
 }
 
-.products-item-price-sale{
+.card-item-price-sale{
   color: var(--basic-del-text);
-}
-.products-item-price{
 }
 
 /*****************SERVICE******************************/
