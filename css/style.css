@@ -434,19 +434,6 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* .new::after{
   content: "eweq";
   background: url("../img/new-item.svg") no-repeat 100% 0%;
@@ -474,4 +461,38 @@ ul{
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+
+/********************** CATALOGE  ******************************/
+
+.catologe-wrapper{
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: max-content min-content min-content max-content;
+}
+
+.breadcrumbs{
+  grid-row: 1/2;
+  grid-column: 1/-1;
+}
+
+.page-title{
+  grid-row: 2/3;
+  grid-column: 1/-1;
+}
+.filters{
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+.cataloge{
+  width: 700px;
+}
+
+.cataloge-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 18px;
 }
